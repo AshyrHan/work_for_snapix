@@ -48,6 +48,7 @@ class Home extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.all(15),
                     child: ListView.builder(
+                        physics: NeverScrollableScrollPhysics(),
                         reverse: true,
                         shrinkWrap: true,
                         itemCount: controller.notes.length,
